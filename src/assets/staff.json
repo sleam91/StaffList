@@ -1,0 +1,23 @@
+{ "staff" : [
+    {
+        "id": 1,
+        "name" : "Kalle Svensson",
+        "role" : "Sekreterare",
+        "mobile" : "071 234 56 78",
+        "email" : "kalle.svensson@sinussurf.se"
+    },
+    {
+        "id": 2,
+        "name" : "Ali Abduzeedo",
+        "role" : "Programmerare",
+        "mobile" : "073 632 23 90",
+        "email" : "ali.abduzeedo@sinussurf.se"
+    },
+    {
+        "id": 3,
+        "name" : "Minette Smith",
+        "role" : "Da Boss",
+        "mobile" : "070 286 34 98",
+        "email" : "minette.smith@sinussurf.se"
+    }
+]}
