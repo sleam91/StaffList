@@ -1,5 +1,5 @@
 <template>
-    <div v-if="!cookieConsent" class="cookie-consent">
+    <div v-if="!cookieConsent" class="cookie">
         <div class="box">
             <p>
                 Cookie Consent
@@ -14,8 +14,11 @@
 export default {
     data() {
         return {
-            cookieConsent: localStorage.getItem("cookie-consent") === "true" ? true : false
+            cookieConsent:false
         };
+    },
+    mounted(){
+        this.cookieConsent= localStorage.getItem("cookie-consent") === "true" ? true : false
     },
     methods: {
         consent() {
@@ -27,7 +30,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.cookie-consent {
+.cookie {
     position: fixed;
     width: 100%;
     height: 100%;

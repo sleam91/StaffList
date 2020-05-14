@@ -33,7 +33,7 @@
         />
         <div class="overlay" v-if="showPopUp">
             <div class="popup">
-                <h2>Är du säker att di vill ta bort {{getEmployee.name}}?</h2>
+                <h2>Är du säker på att du vill ta bort {{getEmployee.name}}?</h2>
                 <router-link v-bind:to="'/staff'">
                     <button v-on:click="removeEmployee(getEmployee.id)">Ja</button>
                 </router-link>
