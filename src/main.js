@@ -2,6 +2,7 @@ import Vue from 'vue'
 import App from './App.vue'
 import router from './router'
 import staff from './assets/staff.json'
+import store from './store'
 
 Vue.config.productionTip = false
 
@@ -23,6 +24,8 @@ new Vue({
       return this.staff
     }
   },
+
   router,
+  store,
   render: h => h(App)
 }).$mount('#app')
