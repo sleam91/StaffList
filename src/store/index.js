@@ -21,9 +21,21 @@ export default new Vuex.Store({
     addEmployee(state, employee) {
       employee.id = ++state.idCounter;
       state.staff.push(employee);
+    },
+    setId(state){
+      state.idCounter=state.staff.length||1
     }
   },
   actions: {
+    addEmployee(context,employee){
+      context.commit('addEmployee',employee)
+    },
+    removeEmployee(context,employee){
+      context.commit('removeEmployee',employee)
+    },
+    setId(context){
+      context.commit('setId')
+    }
   },
   modules: {
   },

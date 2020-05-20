@@ -41,7 +41,7 @@ export default {
     },
     methods: {
         addEmployee() {
-             this.$store.commit('addEmployee',this.newEmployee);
+             this.$store.dispatch('addEmployee',this.newEmployee);
         }
     }
 };

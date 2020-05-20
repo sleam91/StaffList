@@ -10,8 +10,7 @@ new Vue({
   router,
   store,  
   created() {
-    this.$store.state.idCounter = this.$store.state.staff.length||1
-    console.log("here")
+    this.$store.dispatch('setId')
   },
   render: h => h(App)
 }).$mount('#app')

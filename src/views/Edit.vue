@@ -57,7 +57,7 @@ export default {
             this.showPopUp = !this.showPopUp;
         },
         removeEmployee(id) {
-            this.$store.commit('removeEmployee',id);
+            this.$store.dispatch('removeEmployee',id);
         }
     },
     computed: {
