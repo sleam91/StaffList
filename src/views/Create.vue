@@ -29,7 +29,7 @@
 export default {
     data() {
         return {
-            totalNumberOfEmployees: this.$root.getStaffList().length,
+
             newEmployee: {
                 id: 0,
                 name: "",
@@ -41,9 +41,7 @@ export default {
     },
     methods: {
         addEmployee() {
-            this.totalNumberOfEmployees++;
-            this.newEmployee.id = this.totalNumberOfEmployees;
-            this.$root.getStaffList().push(this.newEmployee);
+             this.$store.commit('addEmployee',this.newEmployee);
         }
     }
 };

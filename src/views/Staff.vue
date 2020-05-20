@@ -3,7 +3,7 @@
         <div class="staff-list">
             <h1>Anställda</h1>
             <StaffName
-                v-for="employee in this.$root.getStaffList()"
+                v-for="employee in $store.state.staff"
                 v-bind:key="employee.id"
                 v-bind:employee="employee"
             />

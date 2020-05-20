@@ -57,12 +57,12 @@ export default {
             this.showPopUp = !this.showPopUp;
         },
         removeEmployee(id) {
-            this.$root.removeEmployee(id);
+            this.$store.commit('removeEmployee',id);
         }
     },
     computed: {
         getEmployee() {
-            return this.$root.getEmployee(this.$route.params.id);
+            return this.$store.getters.getEmployee(this.$route.params.id);
         }
     }
 };

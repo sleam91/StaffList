@@ -24,7 +24,7 @@ export default {
     components: {},
     computed: {
         getEmployee() {
-            return this.$root.getEmployee(this.$route.params.id);
+            return this.$store.getters.getEmployee(this.$route.params.id);
         }
     }
 };
